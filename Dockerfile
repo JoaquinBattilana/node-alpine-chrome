@@ -1,4 +1,4 @@
-FROM node
+FROM node:14.4.0
 
 # Install Chrome for Selenium
 RUN curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /chrome.deb
