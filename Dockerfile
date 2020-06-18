@@ -9,3 +9,5 @@ ENV CHROME_PATH=/usr/bin/google-chrome
 # Install chromedriver for Selenium
 RUN curl https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip -o /usr/local/bin/chromedriver
 RUN chmod +x /usr/local/bin/chromedriver
+
+USER jenkins
