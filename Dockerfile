@@ -1,8 +1,3 @@
-FROM selenium/standalone-chrome
+FROM node:12-alpine
 
-RUN apt-get install git-core curl build-essential openssl libssl-dev \
- && git clone https://github.com/nodejs/node.git \
- && cd node \
- && ./configure \
- && make \
- && sudo make install
+RUN apk add --no-cache  chromium --repository=http://dl-cdn.alpinelinux.org/alpine/v3.10/main
